@@ -1,0 +1,18 @@
+data:
+    resource: "@DataBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+service:
+    resource: "@ServiceBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+demo:
+    resource: "@DemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
