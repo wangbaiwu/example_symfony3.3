@@ -1,0 +1,3 @@
+tools_es_homepage:
+    path:     /tools/es
+    defaults: { _controller: ToolsEsBundle:Default:index }

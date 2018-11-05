@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new DemoBundle\DemoBundle(),
             new ServiceBundle\ServiceBundle(),
             new DataBundle\DataBundle(),
+            new Tools\EsBundle\ToolsEsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

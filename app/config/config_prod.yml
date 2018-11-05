@@ -8,7 +8,13 @@ imports:
 #        query_cache_driver: apc
 
 monolog:
+    channels: ["es"]
     handlers:
+        es:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%-es.log"
+            level: info
+            channels: [es]
         main:
             type: fingers_crossed
             action_level: error
